@@ -6,7 +6,7 @@ import json
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
+print('七月流火')
 
 def chat():
     try:
