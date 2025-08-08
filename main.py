@@ -3,7 +3,7 @@ import requests
 import logging
 import re
 import json
-
+print('url')
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
