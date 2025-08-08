@@ -4,15 +4,10 @@ import logging
 import re
 import json
 
-app = Flask(__name__)
-
-DIFY_API_URL = "http://172.16.5.14:3003/v1/chat-messages"
-DIFY_API_KEY = "app-BK3IUBrpogToshEJRif4lhHK"
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-@app.route('/api/chat', methods=['POST'])
+
 def chat():
     try:
         data = request.get_json(force=True) or {}
