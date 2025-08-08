@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 def chat():
     try:
-        data = request.get_json(force=True) or {}
+        data = request.get_json(force=False) or {}
         query = data.get('query')
         user  = data.get('user')
 
