@@ -1,7 +1,7 @@
 def generate():
     for line in upstream_resp.iter_lines(decode_unicode=True):
         # line = re.sub(r'<think>.*?</think>', '', line, flags=re.DOTALL)
-
+        sdfgdfsg
         # 判断是否data: 开头,过滤空行和其他内容
         if line.startswith('data: '):
 
